@@ -1,0 +1,61 @@
+:root{
+    --bg: rgb(8, 255, 255);
+    --sp1: rgb(34,240,240);
+    --sp2: rgb(203,20,235);
+    --sp3: rgb(134,134,134);
+    --sp4: rgb(124,234,156);
+    --sp5: rgb(123,45,234);
+    --sp6: rgb(234,12,23);
+    --hover: rgb(168, 237, 237);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+#app div{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 300px auto 0;
+    position: relative;
+}
+#app span{
+    display: block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+span:nth-child(1){
+    background-color: var(--sp1);
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg) translateZ(-100px);
+}
+span:nth-child(2){
+    background-color: var(--sp2);
+    transform: rotateX(135deg) translateY(100px);
+}
+span:nth-child(3){
+    background-color: var(--sp3);
+    transform: rotateY(45deg) translateX(100px);
+}
+span:nth-child(4){
+    background-color: var(--sp4);
+    transform: rotateX(45deg) translateY(100px);
+}
+span:nth-child(5){
+    background-color: var(--sp5);
+    transform: rotateY(45deg) translateX(-100px);
+}
+span:nth-child(6){
+    background-color: var(--sp6);
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg) translateZ(100px);
+}
